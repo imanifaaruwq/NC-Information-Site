@@ -1,0 +1,125 @@
+body {
+    margin-left: 65px;
+    margin-right: 65px;
+    color: whitesmoke;
+    background-color: black;
+    font-family: 'Noto Sans';
+}
+
+h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Noto Serif';
+}
+
+a {
+    color: whitesmoke;
+    text-decoration-line: none;
+    width: max-content;
+}
+
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: dodgerblue;
+    text-shadow: 0px 0px 0.125rem dodgerblue;
+    transition: all 0.3s;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li .dropdown-list a {
+    font-size: .8rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: relative;
+    right: 3vw;
+}
+
+
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    left: -10%;
+    padding-left: 10%;
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+}
+
+
+
+.dropdown-list li {
+    display: block;
+}
+
+.dropdown-menu:hover .dropdown-list {
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+aside p {
+    margin-top: 0px;
+}
+
+
+/* Add styles to the table */
+table {
+    border-collapse: collapse;
+    border: 2px solid whitesmoke;
+    width: 100%;
+}
+
+/* Cell Styles */
+th,
+td {
+    padding: 10px;
+    /* Add padding to cells */
+    border: 1px solid whitesmoke;
+    /* White border for each cell */
+}
+
+/* Header */
+th {
+    background-color: black;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:900px) {
+    nav div {
+        margin-left: 0px
+    }
+}
+

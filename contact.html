@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans">
+    <link rel="stylesheet" type="text/css" href="city_base_styles.css">
+    <link rel="stylesheet" type="text/css" href="base_styles.css">
+    <script src="confirmEmail.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>North Carolina</p>
+        <nav>
+            <ul>
+                <li class="dropdown-menu"><a href="#">Menu</a>
+                    <ul class="dropdown-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="raleigh.html">State Capitol</a></li>
+                        <li><a href="charlotte.html">Charlotte</a></li>
+                        <li><a href="mooresville.html">Mooresville</a></li>
+                        <li><a href="sources.html">Sources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contact us about North Carolina!</h1>
+    <div id="main-page-contents">
+        <section>
+            <img id="main-image" src="dtcharlotte.jpg" alt="Downtown Charlotte">
+        </section>
+        <aside>
+            <form id="contactForm" action="https://formsubmit.co/imanimarievirtual@gmail.com" method="post">
+                <!-- my spam email -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label for="confirmEmail">Confirm Email:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="example@example.com"
+                        required>
+                </div>
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Message" required></textarea>
+                </div>
+                <input type="submit" value="Submit" onclick="validateEmail()">
+            </form>
+        </aside>
+    </div>
+</body>
+
+</html>
